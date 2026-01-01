@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "patient-monitoring-frontend": {
+    "medisync-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,6 +26,7 @@
               }
             ],
             "styles": [
+              "src/material-theme.scss",
               "src/styles.css"
             ]
           },
@@ -57,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "patient-monitoring-frontend:build:production"
+              "buildTarget": "medisync-frontend:build:production"
             },
             "development": {
-              "buildTarget": "patient-monitoring-frontend:build:development"
+              "buildTarget": "medisync-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
